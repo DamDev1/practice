@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+.container #one .img{
+    width: 20vw;
+    height: 20vw;
+    background: red;
+}
+
+.container #two .img{
+    width: 20vw;
+    height: 20vw;
+    background: blue;
+}
+
+.container #three .img{
+    width: 20vw;
+    height: 20vw;
+    background: green;
+}
+
+.tab{
+    display: none;
+}
+
+.secondContainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
