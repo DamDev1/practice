@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+.container{
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 30px;
+}
+
+.massage{
+    margin-top: 30px;
+    background: blueviolet;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    text-align: left;
+    color: white;
+}
+
+input{
+    padding: 20px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 50px;
+    width: 48vw;
+}
+
+#send{
+    padding: 10px;
+    margin-top: 20px;
+    background: green;
+    border: 0;
+    color: white;
+}
+
+#clear{
+    padding: 10px;
+    margin-top: 10px;
+    background: red;
+    border: 0;
+    color: white;
+    margin-left: 10px;
+}

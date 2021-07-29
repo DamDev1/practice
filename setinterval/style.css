@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-align: center;
+    background: blueviolet;
+}
+
+.container{
+    margin-top: 10%;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+input{
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    font-size: 18px;
+}
+
+button{
+    margin-top: 10px;
+    padding: 8px 20px;
+}
+
+.stop{
+    background: red;
+    border: 0;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.start{
+    background: green;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
