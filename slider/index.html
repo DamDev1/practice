@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Slider</title>
+</head>
+<body>
+
+    <div class="sliderContainer">
+        <div class="slider fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="../img/john-towner-3Kv48NS4WUU-unsplash.jpg">
+            <div class="text">Hello world</div>
+        </div>
+
+        <div class="slider fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="../img/john-tuesday-NqVPSzmcGLc-unsplash.jpg">
+            <div class="text">Hello world</div>
+        </div>
+
+        <div class="slider fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="../img/saymom-leao-2sY0VM6MN3k-unsplash.jpg">
+            <div class="text">Hello world</div>
+        </div>
+
+        <div class="slider fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="../img/jimmy-dean-Yn0l7uwBrpw-unsplash.jpg">
+            <div class="text">Hello world</div>
+        </div>
+
+        <div class="prev" onclick="previousSilde(-1)">&#10095;</div>
+        <div class="next" onclick="nextSilde(1)">&#10094;</div>
+    </div>
+    <br>
+    <div class="dotContainer">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>

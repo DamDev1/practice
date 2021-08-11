@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+.sliderContainer{
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    height: 200px;
+}
+
+.sliderContainer .slider img{
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.sliderContainer .prev{
+    font-size: 30px;
+    position: absolute;
+    top: 110%;
+    color: white;
+    right: 20px;
+    cursor: pointer;
+}
+
+.sliderContainer .next{
+    font-size: 30px;
+    position: absolute;
+    top: 110%;
+    color: white;
+    left: 20px;
+    cursor: pointer;
+}

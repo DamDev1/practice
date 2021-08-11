@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AutoComplete</title>
+</head>
+<body>
+    <div class="container">
+        <input type="text" list="datalist" onkeyup="show(this.value)" class="sample" placeholder="Search">
+        <datalist id="datalist">
+            <option value="Damilare"></option>
+            <option value="Opeyemi"></option>
+            <option value="Samuel"></option>
+            <option value="Boluwatife"></option>
+            <option value="Tomiwa"></option>
+            <option value="Sejiro"></option>
+            <option value="Janet"></option>
+            <option value="Funmilayo"></option>
+            <option value="Setonji"></option>
+            <option value="Ajasa"></option>
+        </datalist>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
