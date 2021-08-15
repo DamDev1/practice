@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Age Calculator</title>
+</head>
+<body>
+
+    <h2>This App Is not available for mobile for this movement</h2>
+    
+    <div class="container">
+
+        <form>
+
+            <div class="base">
+                <h1>Age Calculator</h1>
+            </div>
+            <hr>
+
+            <div class="inputContainer">
+                <div class="term">
+                    <h3>Date</h3>
+                    <input type="text" class="date" placeholder="Date">
+                </div>
+    
+                <div class="term" id="month">
+                    <h3>Month</h3>
+                    <input type="text" class="month" placeholder="Mouth">
+                </div>
+    
+                <div class="term" id="year">
+                    <h3>Year</h3>
+                    <input type="text" class="year" placeholder="Year">
+                </div>
+            </div>
+        </form>
+
+        <div class="btn">
+            <button class="submit" onclick="calculate()">Calculate</button>
+        </div>
+
+        <div class="textOut">
+            <h2 id="text"></h2>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

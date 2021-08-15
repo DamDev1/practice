@@ -1,43 +1,37 @@
-//setting the default slider start index
-const sliderIndex = 1;
+const next = document.querySelector(".next");
+const prev = document.querySelector(".prev");
+const images = document.querySelector(".carousel-container").children;
+const total = images.length;
 
-// we call the function that is implemented below
-showSlide(sliderIndex)
+let index = 0;
 
-//Decrease the index by 1 - show previous slide
-function previousSilde(){
-    showSlide(sliderIndex -=1)
-}
+prev.addEventListener('click', function(){
+    nextImg("next")
+});
 
-//Increase the index by 1 - show next slide
-function nextSilde(){
-    showSlide(sliderIndex +=1)
-}
+prev.addEventListener('click', function(){
+    nextImg("prev")
+});
 
-//set current slide
-function currentSlide(n){
-    showSlide(sliderIndex = n)
-}
+function nextImg(direction){
+    if(direction == "next"){
+        index ++;
 
-// flip function
-function showSlide(n){
-    let i;
-    // we refer to the element with the name "slider", that is , to the picture
-    const slider = document.querySelector(".slider");
-
-    //checking the number of slide
-    if(n > slider.length){
-        sliderIndex = 1
-    }
-    if(n < 1){
-        sliderIndex = slider.length;
+        if(index == total){
+            index = 0
+        }
+    }else{
+        if(index ==0){
+            index = total -1;
+        }else{
+            index --;
+        }   
     }
 
-    //loop through each slide in a for loop
-    for(let slide of slider){
-        slide.style.display = "none"
+    for(let i = 0; i =images.length; i++){
+        images[i].classList.remove("main"); 
     }
 
-    //making an element block
-    slider[sliderIndex - 1].style.display = "block"
+    images[index].classList.add("main")
 }
+

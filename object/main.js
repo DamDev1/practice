@@ -1,27 +1,20 @@
-// const secondName = document.querySelector(".secondName");
-// const secondAge = document.querySelector(".secondAge");
-// const secondlorem = document.querySelector(".secondlorem");
+const name1 = document.getElementById("name");
+const age1 = document.getElementById("age");
+const loram1 = document.getElementById("loram");
 
-const firstProduct = {
-    name: "Damilare",
-    age: 34,
-    lorem: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis officiis consequuntur architecto, distinctio, laborum natus consequatur totam consectetur maxime eveniet quis eligendi temporibus unde expedita ullam quia iure ratione numquam."
+class display{
+    constructor(name, age, loram) {
+        this.name = name;
+        this.age = age;
+        this.loram = loram;
+    }
 }
 
-const secondProduct = {
-    name: "Janet",
-    age: 23,
-    lorem: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis officiis consequuntur architecto, distinctio, laborum natus consequatur totam consectetur maxime eveniet quis eligendi temporibus unde expedita ullam quia iure ratione numquam."
-}
-document.getElementById("name").innerHTML = firstProduct.name;
+const details1 = new display("Damilare", 34, "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto aspernatur quos tempora ex vitae? Quibusdam voluptatum repellat deleniti, nam cumque voluptatem quod placeat tempora alias quam consectetur officiis dolore modi.");
 
-document.getElementById("age").innerHTML = firstProduct.age;
-
-document.getElementById("loram").innerHTML = firstProduct.lorem;
+name1.textContent = details1.name;
+age1.textContent = details1.age;
+loram1.textContent = details1.loram;
 
 
-document.querySelector("secondName").innerHTML = secondProduct.name;
 
-document.querySelector("secondAge").innerHTML = secondProduct.age;
-
-document.querySelector("secondlorem").innerHTML = secondProduct.lorem;
