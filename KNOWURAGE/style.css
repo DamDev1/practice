@@ -10,13 +10,6 @@ body{
     background: #2782e3;
 }
 
-h2{
-    color: white;
-    text-align: center;
-    margin-top: 10%;
-    display: none;
-}
-
 .container{
     margin: auto;
     background: white;

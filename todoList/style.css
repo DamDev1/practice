@@ -3,29 +3,103 @@
     padding: 0;
 }
 
+body{
+    box-sizing: border-box;
+}
+
 .container{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.container .heading{
+    background: blueviolet;
+    padding: 30px;
+}
+
+.heading h2{
     text-align: center;
 }
 
-#searchBar{
-    padding: 15px;
-    border-radius: 10px;
+.inputPart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
-input[type=text]{
-    width: 30%;
-    -webkit-transition: width 0.15s ease-in-out;
-    transition: width 0.15s ease-in-out;
+.inputPart input{
+    padding: 10px;
+    width: 90%;
+    font-size: 18px;
+    outline: none;
 }
 
-input[type=text]:focus{
-    width: 70%;
+.inputPart button{
+    padding: 14px;
+    border: 0;
+    margin-left: -10px;
+    cursor: pointer;
 }
 
-#list{
-    font-size: 1.5em;
+.liContainer{
+    background: red;
 }
 
-.animals{
-    display: list-item;
+.liContainer li{
+    cursor: pointer;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+}
+
+.liContainer li:nth-child(odd){
+    background: #f9f9f9;
+}
+
+li:hover{
+    background: #ddd;
+}
+
+.active{
+    position: relative;
+    background: #888;
+    text-decoration: line-through;
+}
+
+.active::after {
+    content: '';
+    position: absolute;
+    border-color: blue;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+li span{
+    position: absolute;
+    right: 0px;
+    font-size: 25px;
+    padding: 8px 15px;
+    top: 0;
+}
+
+li span:hover{
+    background: red;
+    color: white;
 }
